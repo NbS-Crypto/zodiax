@@ -7,8 +7,8 @@ import {ERC20Burnable} from "@openzeppelin/contracts/token/ERC20/extensions/ERC2
 import {ERC20Permit} from "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol";
 
 /// @custom:security-contact matrix-plant-pulse@duck.com
-contract ZodiaX is ERC20, ERC20Burnable, ERC20Permit {
-    constructor() ERC20("ZodiaX", "ZDX") ERC20Permit("ZodiaX") {
+contract ZodiX is ERC20, ERC20Burnable, ERC20Permit {
+    constructor() ERC20("Zodi-X", "ZODIX") ERC20Permit("Zodi-X") {
         _mint(msg.sender, 2997924580 * 10 ** decimals());
     }
 }

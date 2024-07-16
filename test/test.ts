@@ -4,7 +4,7 @@ import { loadFixture } from "@nomicfoundation/hardhat-toolbox/network-helpers";
 // const { PANIC_CODES } = require("@nomicfoundation/hardhat-chai-matchers/panic");
 
 
-describe("ZodiaX", function () {
+describe("ZodiX", function () {
   // We define a fixture to reuse the same setup in every test. We use
   // loadFixture to run this setup once, snapshot that state, and reset Hardhat
   // Network to that snapshot in every test.
@@ -15,7 +15,7 @@ describe("ZodiaX", function () {
     // To deploy our contract, we just have to call ethers.deployContract and await
     // its waitForDeployment() method, which happens once its transaction has been
     // mined.
-    const zdxToken = await ethers.deployContract("ZodiaX");
+    const zdxToken = await ethers.deployContract("ZodiX");
 
     await zdxToken.waitForDeployment();
 
@@ -89,7 +89,7 @@ describe("ZodiaX", function () {
   describe("Burning", function () {
 
     it("Burn should burn the specified amount of tokens", async function () {
-      const zdxToken = await ethers.deployContract("ZodiaX");
+      const zdxToken = await ethers.deployContract("ZodiX");
       const [owner, addr1] = await ethers.getSigners();
 
       await zdxToken.transfer(addr1.address, 314);
